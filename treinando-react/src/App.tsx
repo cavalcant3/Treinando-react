@@ -5,16 +5,14 @@ import Menu from './components/Menu';
 
 function App() {
 
-  const [counter, setCounter] = useState(1);
-  
-  //incrementar
-  function handleButtonClick(){
+  const [counter, setCounter] = useState(0);
+
+  function Incrementar(){
     setCounter(counter + 1);
     console.log(counter);
   }
-  //diminuir
-  function RemoveButtonClick(){
-    setCounter(counter -1);
+  function Diminuir(){
+    setCounter(counter - 1);
     console.log(counter);
   }
 
@@ -27,10 +25,9 @@ function App() {
           E ai pessoal
         </p>
           <p> { counter } </p>
-          {/* incrementar */}
-          <button onClick={handleButtonClick}>Adicionar mais itens</button>
-
-          <button onClick={RemoveButtonClick}>Remover mais itens</button>
+          <button onClick= {Incrementar} >Adicionar mais um item ao carrinho</button>
+          <button onClick= {Diminuir} >Remover mais um item ao carrinho</button>
+          
         <Menu>
           <ul>
             <li>Cardapio</li>
