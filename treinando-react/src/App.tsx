@@ -1,22 +1,16 @@
 import React from 'react';
-
+import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
+        {/* passando parametro */}
+      <Header title="Matheus"/>
         <p>
           E ai pessoal
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
     </div>
   );
