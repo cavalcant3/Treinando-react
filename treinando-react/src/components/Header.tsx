@@ -1,4 +1,3 @@
-import { title } from 'process';
 import React from 'react';
 
 
@@ -9,11 +8,12 @@ interface HeaderProps{
   subtitle?: string;
 }
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = (props) => {
     return (
       <div>
         <h1>Olá mundo</h1>
-        <h3>{title}</h3>
+        <h3>{props.title}</h3>
+        <h3>{props.subtitle}</h3>
       </div>
     );
   
